@@ -1,0 +1,33 @@
+{"ts": "2025-10-23T11:39:13.569389Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-23T13:17:26.867908Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-23T13:17:58.076482Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-23T13:21:32.668183Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-23T13:58:21.860971Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-23T14:52:13.804906Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-23T14:55:08.435293Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Auth Server...", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 30}
+{"ts": "2025-10-23T14:56:03.665865Z", "level": "INFO", "message": "\u2705 Logging initialized (debug=False)", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\logger.py", "line": 75, "module": "logger", "func": "init_logging"}
+{"ts": "2025-10-23T14:56:03.667217Z", "level": "INFO", "message": "\ud83d\ude80 Starting FastAPI Auth Server...", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 30, "module": "main", "func": "<module>"}
+{"ts": "2025-10-23T14:57:36.741406Z", "level": "INFO", "message": "\u2705 Logging initialized (debug=False)", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\logger.py", "line": 75, "module": "logger", "func": "init_logging"}
+{"ts": "2025-10-23T14:57:36.742078Z", "level": "INFO", "message": "\ud83d\ude80 Starting FastAPI Auth Server...", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 30, "module": "main", "func": "<module>"}
+{"ts": "2025-10-23T15:15:02.782755Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Auth Server...", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 30}
+{"ts": "2025-10-23T15:15:05.398826Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Auth Server...", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 30}
+{"ts": "2025-10-23T15:15:07.199106Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-23T15:15:11.277227Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-23T15:19:29.689554Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-23T15:59:12.170580Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-23T16:09:07.185910Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-23T16:09:36.091691Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Auth Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 25}
+{"ts": "2025-10-23T16:10:36.987896Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Auth Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 25}
+{"ts": "2025-10-23T16:10:38.970722Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Auth Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 25}
+{"ts": "2025-10-23T16:10:48.236302Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-24T01:44:22.786113Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-24T02:02:06.302786Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-24T02:02:56.307655Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-24T02:57:56.139286Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-24T03:01:11.089772Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-24T03:01:29.928454Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-24T03:07:04.778688Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-24T05:14:37.112739Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-24T05:17:56.106033Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-24T12:46:17.130853Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
+{"ts": "2025-10-24T13:54:54.292216Z", "level": "INFO", "msg": "\ud83d\ude80 Starting FastAPI Server", "file": "C:\\Users\\Admin\\Downloads\\FULL_WORKING\\AUTH_BD\\main.py", "line": 15}
