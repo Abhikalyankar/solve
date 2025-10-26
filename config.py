@@ -8,10 +8,10 @@ class Settings:
     APP_ENV = os.getenv("APP_ENV", "production").lower()
     DEBUG = APP_ENV != "production"
 
-    SECRET_KEY = os.getenv("SECRET_KEY")
-    JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
+    SECRET_KEY = "supersecretkey123"
+    JWT_SECRET_KEY = SECRET_KEY
 
-    SQLALCHEMY_DATABASE_URI = os.getenv("SQLALCHEMY_DATABASE_URI")
+    SQLALCHEMY_DATABASE_URI = os.getenv("postgresql://postgres:postgres@localhost:5432/fast01")
     REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379/0")
 
     OTP_TTL = int(os.getenv("OTP_TTL", "300"))

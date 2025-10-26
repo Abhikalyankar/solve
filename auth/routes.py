@@ -21,7 +21,7 @@ def create_flask_compatible_token(user_id: int, phone_number: str, hours=12):
         "iat": datetime.utcnow(),
         "exp": datetime.utcnow() + timedelta(hours=hours),
     }
-    return jwt.encode(payload, settings.JWT_SECRET_KEY, algorithm="HS256")
+    return jwt.encode(payload, settings.JWT_SECRET_KEY)
 
 
 # ============================================================================
