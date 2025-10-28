@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "channels",
     "chat",
+    "drf_yasg",
 ]
 
 MIDDLEWARE = [
@@ -58,6 +59,24 @@ DATABASES = {
     }
 }
 
+
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'dms_notification', 'templates')],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
 ASGI_APPLICATION = "superapp_backend.asgi.application"
 CHANNEL_LAYERS = {
     "default": {
@@ -69,23 +88,70 @@ CHANNEL_LAYERS = {
 }
 
 REST_FRAMEWORK = {
+    "DEFAULT_FILTER_BACKENDS": [],
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
+    "PAGE_SIZE": 40,
+    "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.IsAuthenticated", "rest_framework.permissions.DjangoModelPermissions"],
     "DEFAULT_AUTHENTICATION_CLASSES": (
-        "rest_framework_simplejwt.authentication.JWTAuthentication",
-    )
+        "superapp_backend.remote_auth_backend.RemoteTokenAuthentication",  # Put remote auth first
+        # "rest_framework.authentication.SessionAuthentication",  # Temporarily disabled
+    ),
+    "DEFAULT_RENDERER_CLASSES": (
+        "rest_framework.renderers.JSONRenderer",
+        "rest_framework.renderers.BrowsableAPIRenderer",
+    ),
+    "NON_FIELD_ERRORS_KEY": "Error",
 }
 
-SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(hours=12),
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=30),
-    "AUTH_HEADER_TYPES": ("Bearer",),
-    "SIGNING_KEY": os.getenv("JWT_SECRET_KEY", "super_jwt_secret_key_12345"),
-}
+# Remote Authentication Configuration
+AUTH_SERVICE_URL = os.getenv('AUTH_SERVICE_URL', 'http://127.0.0.1:8300')  # kepler-auth service on host
+AUTH_SERVICE_TIMEOUT = int(os.getenv('AUTH_SERVICE_TIMEOUT', 5))
+
+# Authentication backends - add remote auth backend
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',  # Keep for admin
+    'superapp_backend.remote_auth_backend.RemoteAuthBackend',  # Remote auth for API
+]
+
+# SIMPLE_JWT = {
+#     "ACCESS_TOKEN_LIFETIME": timedelta(hours=12),
+#     "REFRESH_TOKEN_LIFETIME": timedelta(days=30),
+#     "AUTH_HEADER_TYPES": ("Bearer",),
+#     "SIGNING_KEY": os.getenv("JWT_SECRET_KEY", "super_jwt_secret_key_12345"),
+# }
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:19006",
     "http://localhost:3000",
     "http://10.0.2.2:19006",
     "http://10.214.135.184:19006",
+    
 ]
 
 STATIC_URL = "static/"
+
+
+#  Swagger settings for JWT authentication
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'Bearer': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header',
+            'description': (
+                'JWT-based authentication.\n\n'
+                'Add the token in the "Authorization" header with the prefix **Bearer**.\n\n'
+                'Format: `Bearer <your_jwt_token>`'
+            ),
+        },
+    },
+    'USE_SESSION_AUTH': False,
+    'LOGIN_URL': None,
+    'LOGOUT_URL': None,
+    'DOC_EXPANSION': 'none',
+    'OPERATIONS_SORTER': 'alpha',
+    'TAGS_SORTER': 'alpha',
+    'DEEP_LINKING': True,
+    'SHOW_EXTENSIONS': True,
+    'DEFAULT_MODEL_RENDERING': 'model',
+}
